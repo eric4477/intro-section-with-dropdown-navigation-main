@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  width: 100%;
+  height: 100%;
+}
+* {
+  box-sizing: border-box;
+  font-family: "Epilogue", sans-serif;
+}
+
+.dropdown {
+  position: relative;
+}
+
+#dropdown-menu1 {
+  position: absolute;
+  top: calc(100% + 0.8rem);
+  right: -14px;
+  background-color: white;
+  width: 8.8rem;
+  height: 9.7rem;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+#dropdown-menu2 {
+  position: absolute;
+  top: calc(100% + 0.8rem);
+  background-color: white;
+  width: 7rem;
+  height: 8rem;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  transition: opacity 0.3s ease-in-out;
+}
+
+.dropdown-menu .list-info {
+  color: hsl(0, 0%, 41%);
+}
+
+.dropdown-menu .list-info a {
+  transition: 0.3s;
+}
+
+/* .dropdown > a:hover + .dropdown-menu {
+} */
+
+#item-6-info {
+  transition: 0.3s;
+}
+.text-base span {
+  white-space: nowrap;
+}
+button {
+  transition: 0.3s;
+}
+
+#mobile-nav {
+  position: fixed;
+  top: 0px;
+  opacity: 100%;
+  right: -40rem;
+  width: 15rem;
+  height: 100%;
+  bottom: 0px;
+  transition: right 0.5s ease-in-out;
+}
+
+#mobile-list-items a {
+  font-size: clamp(1rem, 2.5vw, 2rem);
+}
+
+#mobile-dropdown-menu a {
+  font-size: clamp(0.9rem, 2vw, 1.5rem);
+}
+#mobile-dropdown-menu2 a {
+  font-size: clamp(0.9rem, 2vw, 1.5rem);
+}
+
+/* #mobile-dropdown {
+  position: relative;
+}
+
+#mobile-dropdown-menu {
+  position: absolute;
+} */

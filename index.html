@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="script/app.js" defer></script>
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Intro section with dropdown navigation</title>
+  </head>
+  <body class="bg-AlmostWhite pb-16">
+    <header>
+      <!-- navbar -->
+      <nav class="">
+        <div class="flex items-center p-6 justify-between">
+          <div
+            id="left-items"
+            class="flex items-center gap-14 md:ml-3 shrink-0 mr-8"
+          >
+            <div id="logo" class="flex mt-1 ml-[-5px] md:ml-0">
+              <a href="#"> <img src="./images/logo.svg" alt="" /></a>
+            </div>
+            <div class="flex items-center gap-10">
+              <div
+                id="item1"
+                class="hidden md:flex text-base font-semibold items-center space-x-1 text-MediumGray"
+              >
+                <div class="dropdown">
+                  <a id="features" href="#" class="hover:text-AlmostBlack"
+                    >Features</a
+                  >
+                  <div
+                    id="dropdown-menu1"
+                    class="dropdown-menu flex flex-col items-center opacity-0 space-y-3 py-5 px-3"
+                  >
+                    <div
+                      class="flex flex-row justify-center gap-3"
+                      id="list-item1"
+                    >
+                      <div class="list-icon">
+                        <img src="images/icon-todo.svg" />
+                      </div>
+                      <div class="list-info text-sm font-light">
+                        <a href="#" class="hover:text-AlmostBlack">Todo List</a>
+                      </div>
+                    </div>
+                    <div
+                      class="flex flex-row justify-center gap-3"
+                      id="list-item2"
+                    >
+                      <div class="list-icon">
+                        <img src="images/icon-calendar.svg" />
+                      </div>
+                      <div class="list-info text-sm font-light">
+                        <a href="#" class="hover:text-AlmostBlack">Calender</a>
+                      </div>
+                    </div>
+                    <div
+                      class="flex flex-row justify-center gap-3"
+                      id="list-item3"
+                    >
+                      <div class="list-icon ml-3">
+                        <img src="images/icon-reminders.svg" />
+                      </div>
+                      <div class="list-info text-sm font-light">
+                        <a href="#" class="hover:text-AlmostBlack">Reminders</a>
+                      </div>
+                    </div>
+
+                    <div
+                      class="flex flex-row justify-center gap-3"
+                      id="list-item4"
+                    >
+                      <div class="list-icon">
+                        <img src="images/icon-planning.svg" />
+                      </div>
+                      <div class="list-info text-sm font-light">
+                        <a href="#" class="hover:text-AlmostBlack">Planning</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="drop-arrow">
+                  <img id="drop-icon" src="images/icon-arrow-down.svg" alt="" />
+                </div>
+              </div>
+              <div
+                id="item2"
+                class="hidden md:flex text-base font-semibold items-center space-x-1 text-MediumGray"
+              >
+                <div class="dropdown">
+                  <a id="company" href="#" class="hover:text-AlmostBlack"
+                    >Company</a
+                  >
+                  <div
+                    id="dropdown-menu2"
+                    c
+                    class="dropdown-menu flex flex-col opacity-0 space-y-3 py-5 px-3"
+                  >
+                    <div id="list-item1" class="flex ml-3 flex-row w-[5rem]">
+                      <a
+                        href="#"
+                        class="text-sm font-light hover:text-AlmostBlack"
+                        >History</a
+                      >
+                    </div>
+                    <div id="list-item2" class="flex ml-3 flex-row w-[5rem]">
+                      <a
+                        href="#"
+                        class="text-sm font-light hover:text-AlmostBlack"
+                        >Our Team</a
+                      >
+                    </div>
+                    <div id="list-item3" class="flex ml-3 flex-row w-[5rem]">
+                      <a
+                        href="#"
+                        class="text-sm font-light hover:text-AlmostBlack"
+                        >Blog</a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="drop-arrow">
+                  <img
+                    id="drop-icon2"
+                    src="images/icon-arrow-down.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div
+                id="item-3"
+                class="text-MediumGray text-base font-semibold hidden hover:text-AlmostBlack md:block"
+              >
+                <a href="#">Careers </a>
+              </div>
+              <div
+                id="item-4"
+                class="text-MediumGray text-base font-semibold hidden hover:text-AlmostBlack md:block"
+              >
+                <a href="#">About</a>
+              </div>
+            </div>
+          </div>
+          <div
+            id="right-items"
+            class="hidden md:flex space-x-10 mr-5 items-center"
+          >
+            <div
+              id="item-5 "
+              class="text-MediumGray text-base font-semibold flex"
+            >
+              <a href="#" class="hover:text-AlmostBlack">Login </a>
+            </div>
+            <div
+              id="item-6"
+              class="text-MediumGray text-base font-semibold px-5 py-2 border-2 border-AlmostBlack rounded-xl cursor-pointer"
+            >
+              <a id="item-6-info" href="#" class="hover:text-AlmostBlack"
+                >Register</a
+              >
+            </div>
+          </div>
+          <!-- mobile nav-->
+          <div id="mobile-nav" class="bg-AlmostWhite flex flex-col md:hidden">
+            <div
+              id="mobile-list-items"
+              class="mt-[34%] ml-[1.5rem] space-y-5 text-MediumGray"
+            >
+              <div id="list-item1" class="">
+                <div class="flex flex-row items-center space-x-3">
+                  <div>
+                    <a
+                      id="mobile-features"
+                      href="#"
+                      class="hover:text-AlmostBlack cursor-pointer"
+                      >Features</a
+                    >
+                  </div>
+                  <div id="list-item1-drop">
+                    <img
+                      id="mobile-arrow-down"
+                      src="images/icon-arrow-down.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div id="mobile-dropdown">
+                  <div
+                    id="mobile-dropdown-menu"
+                    class="hidden flex-col ml-6 space-y-3 mt-6"
+                  >
+                    <div
+                      id="dropdown-menu-list1"
+                      class="flex flex-row items-center space-x-3"
+                    >
+                      <div id="list-logo">
+                        <img src="images/icon-todo.svg" alt="" />
+                      </div>
+                      <div>
+                        <a class="hover:text-AlmostBlack" href="#">Todo List</a>
+                      </div>
+                    </div>
+                    <div
+                      id="dropdown-menu-list2"
+                      class="flex flex-row items-center space-x-3"
+                    >
+                      <div id="list2-logo">
+                        <img src="images/icon-calendar.svg" alt="" />
+                      </div>
+                      <div>
+                        <a class="hover:text-AlmostBlack" href="#">Calender</a>
+                      </div>
+                    </div>
+                    <div
+                      id="dropdown-menu-list3"
+                      class="flex flex-row items-center space-x-3"
+                    >
+                      <div id="list-logo3" class="">
+                        <img src="images/icon-reminders.svg" alt="" />
+                      </div>
+                      <div>
+                        <a class="hover:text-AlmostBlack" href="#">Reminders</a>
+                      </div>
+                    </div>
+                    <div
+                      id="dropdown-menu-list4"
+                      class="flex flex-row items-center space-x-3"
+                    >
+                      <div id="list-logo">
+                        <img src="images/icon-planning.svg" alt="" />
+                      </div>
+                      <div>
+                        <a class="hover:text-AlmostBlack" href="#">planning</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="list-item2" class="flex flex-row items-center space-x-3">
+                <div>
+                  <a
+                    id="mobile-company"
+                    href="#"
+                    class="hover:text-AlmostBlack cursor-pointer"
+                    >Company</a
+                  >
+                </div>
+                <div id="list-item2-drop">
+                  <img
+                    id="mobile-arrow2"
+                    src="images/icon-arrow-down.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div id="mobile-dropdown2">
+                <div
+                  id="mobile-dropdown-menu2"
+                  class="hidden flex-col ml-6 space-y-3"
+                >
+                  <div id="dropdown2-menu-list1">
+                    <a class="hover:text-AlmostBlack" href="#">History</a>
+                  </div>
+                  <div id="dropdown2-menu-list2">
+                    <a class="hover:text-AlmostBlack" href="#">Our Team</a>
+                  </div>
+                  <div id="dropdown2-menu-list3">
+                    <a class="hover:text-AlmostBlack" href="#">Blog</a>
+                  </div>
+                </div>
+              </div>
+              <div id="list-item3">
+                <a href="#" class="hover:text-AlmostBlack cursor-pointer"
+                  >Careers</a
+                >
+              </div>
+              <div id="list-item4">
+                <a href="#" class="hover:text-AlmostBlack cursor-pointer">
+                  About</a
+                >
+              </div>
+              <div
+                id="form-info"
+                class="flex flex-col items-center text-MediumGray space-y-4"
+              >
+                <div id="login">
+                  <a href="#" class="hover:text-AlmostBlack cursor-pointer"
+                    >Login</a
+                  >
+                </div>
+                <div
+                  id="register"
+                  class="px-16 py-2 border-2 border-AlmostBlack rounded-xl"
+                >
+                  <a href="#" class="hover:text-AlmostBlack cursor-pointer"
+                    >Register</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--mobile hamburger-->
+          <div id="menu" class="flex items-center shrink-0 md:hidden z-10">
+            <img
+              id="icon-menu"
+              class="cursor-pointer"
+              src="images/icon-menu.svg"
+              alt=""
+            />
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div
+      id="main-section"
+      class="flex flex-col-reverse md:my-10 md:flex-row w-full md:w-[78%] mx-auto"
+    >
+      <div
+        id="info-section"
+        class="md:w-6/12 flex flex-col space-y-5 items-center md:space-y-12 md:items-start shrink-0"
+      >
+        <div id="main-title">
+          <h1
+            class="text-4xl font-black text-AlmostBlack md:text-[4.7rem] md:leading-[1] mt-[8%] md:mt-[23%]"
+          >
+            <span class="md:block"> Make</span>
+            remote work
+          </h1>
+        </div>
+        <div
+          id="title-info"
+          class="w-11/12 mx-auto text-center md:w-9/12 md:text-left md:mx-0"
+        >
+          <p
+            id="mobile-info"
+            class="text-base text-MediumGray md:w-12/12 md:hidden md:text-lg"
+          >
+            <span class="whitespace-nowrap md:hidden">
+              Get your team in sync, no matter your
+            </span>
+            <span class="whitespace-nowrap md:hidden">
+              location. Streamline processes, create
+            </span>
+            <span class="whitespace-nowrap md:hidden">
+              team rituals,and watch productivity soar.
+            </span>
+          </p>
+          <p
+            id="desktop-info"
+            class="hidden text-base text-MediumGray md:w-12/12 md:block md:text-lg"
+          >
+            <span class="whitespace-nowrap md:block"
+              >Get your team in sync, no matter your location.</span
+            >
+            <span class="whitespace-nowrap md:block">
+              Streamline processes, create team rituals,and</span
+            >
+            <span class="whitespace-nowrap md:block"></span>watch productivity
+            soar.
+          </p>
+        </div>
+        <div id="button">
+          <button
+            class="px-7 py-3 rounded-xl text-AlmostWhite border-2 border-AlmostBlack bg-AlmostBlack text-center hover:text-AlmostBlack hover:bg-AlmostWhite md:mb-12"
+          >
+            Learn more
+          </button>
+        </div>
+        <div
+          id="logos"
+          class="flex flex-row space-x-7 w-11/12 justify-center pt-7 md:items-end md:justify-normal md:w-full md:space-x-8"
+        >
+          <div id="icon1">
+            <img src="images/client-databiz.svg" alt="" />
+          </div>
+          <div id="icon2">
+            <img src="images/client-audiophile.svg" alt="" />
+          </div>
+          <div id="icon3">
+            <img src="images/client-meet.svg" alt="" />
+          </div>
+          <div id="icon4">
+            <img src="images/client-maker.svg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div id="img-section" class="md:w-6/12 md:ml-14 flex flex-shrink-0">
+        <div class="w-[82%] mx-auto hidden md:flex">
+          <img class="w-full" src="images/image-hero-desktop.png" alt="" />
+        </div>
+        <div class="w-full flex shrink-0 md:hidden">
+          <img class="w-full" src="images/image-hero-mobile.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
